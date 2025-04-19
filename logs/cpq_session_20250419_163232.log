@@ -1,0 +1,33 @@
+2025-04-19 16:32:32,738 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-19 16:32:38,385 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-19 16:32:44,775 [WARNING] From C:\Users\HP\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-04-19 16:33:01,386 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:01,447 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-19 16:33:01,517 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:01,519 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-19 16:33:01,520 [INFO] [Validation Agent] Validating output result
+2025-04-19 16:33:01,526 [WARNING] [Validation Agent] Result is empty
+2025-04-19 16:33:01,527 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-19 16:33:27,254 [INFO] [Pipeline Start] Strategy: crewai, Query: ITAM reload for customer CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:27,255 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-19 16:33:27,260 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:27,260 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-19 16:33:27,260 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-19 16:33:37,926 [INFO] [Pipeline Start] Strategy: autogen, Query: ITAM reload for customer CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:37,928 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-19 16:33:37,928 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-19 16:33:37,929 [INFO] Orchestrator determined task: unknown
+2025-04-19 16:33:37,930 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:37,930 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-19 16:33:37,930 [INFO] Discovery agent matched 0 rows.
+2025-04-19 16:33:37,931 [ERROR] No agent function found for task: unknown
+2025-04-19 16:33:37,931 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-19 16:33:48,393 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:48,413 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-19 16:33:48,419 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow\logs\ITAM_Reload_log.txt
+2025-04-19 16:33:48,420 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-19 16:33:48,421 [INFO] [Validation Agent] Validating output result
+2025-04-19 16:33:48,423 [WARNING] [Validation Agent] Result is empty
+2025-04-19 16:33:48,424 [INFO] [Pipeline Success] Completed run_cpq_pipeline

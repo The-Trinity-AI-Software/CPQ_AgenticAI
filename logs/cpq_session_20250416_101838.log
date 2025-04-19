@@ -1,0 +1,37 @@
+2025-04-16 10:18:44,872 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-16 10:19:20,914 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:19:20,915 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:19:22,203 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:24:17,434 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:24:17,434 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:24:18,713 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:29:29,121 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:29:29,123 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:29:30,387 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:37:39,354 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:37:39,354 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:37:41,245 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-16 10:40:26,022 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:40:26,022 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:40:27,301 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:43:36,521 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:43:36,523 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:43:37,795 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:48:40,356 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:48:40,357 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:48:41,636 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:52:25,505 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:52:25,505 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:52:26,776 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:53:59,640 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:53:59,641 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:54:00,922 [WARNING] Pipeline returned None or empty state.
+2025-04-16 10:57:07,939 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 10:57:07,947 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 10:57:09,215 [WARNING] Pipeline returned None or empty state.
+2025-04-16 12:10:38,633 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 12:10:38,634 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 12:10:39,948 [WARNING] Pipeline returned None or empty state.
+2025-04-16 12:13:57,269 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-16 12:13:57,270 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-16 12:13:58,542 [WARNING] Pipeline returned None or empty state.

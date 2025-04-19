@@ -1,0 +1,17 @@
+2025-04-15 19:33:15,048 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-15 19:33:33,745 [INFO] User selected task: itam_reload
+2025-04-15 19:33:49,741 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: langgraph
+2025-04-15 19:33:49,742 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 19:33:49,778 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-15 19:33:51,657 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-15 19:33:52,476 [INFO] Saved result to: G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_2025-04-15.xlsx
+2025-04-15 19:40:49,397 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: langgraph
+2025-04-15 19:40:49,398 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 19:40:49,417 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-15 19:40:51,294 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-15 20:04:09,036 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 20:04:09,055 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-15 20:04:10,935 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-15 20:13:40,212 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 20:13:40,231 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-15 20:13:42,113 [INFO] Pipeline executed successfully for strategy: langgraph

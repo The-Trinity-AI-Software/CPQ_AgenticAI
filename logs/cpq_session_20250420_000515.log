@@ -1,0 +1,196 @@
+2025-04-20 00:05:15,534 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:05:25,432 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 00:06:56,179 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:10:02,269 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:17:07,645 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:17:18,643 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:20:47,232 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:24:19,851 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:27:56,427 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:29:58,870 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:32:54,301 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:38:22,218 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:39:21,558 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:40:43,094 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:44:37,563 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:46:11,346 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:52:21,850 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:55:52,308 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:59:10,637 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:02:31,099 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:05:16,186 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:08:24,829 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:08:59,204 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:12:44,798 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:12:46,907 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:12:49,660 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:13:31,815 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:20:56,482 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:23:14,133 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:25:16,945 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:49:20,555 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:49:31,753 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:49:42,862 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:49:47,643 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:50:04,778 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:50:35,460 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:51:30,542 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:51:41,861 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:51:50,777 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:52:14,816 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:52:50,205 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:57:43,963 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:59:37,484 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 01:59:46,645 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:02:28,709 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:03:04,094 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:03:18,868 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:04:19,725 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:05:19,051 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:05:36,906 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:06:09,606 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:06:30,382 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:07:18,176 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:07:33,795 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:07:40,588 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:07:53,274 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:09:06,558 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:09:51,832 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:10:44,604 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:10:44,788 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:10:56,688 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:10:56,734 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:12:41,480 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:12:41,528 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:14:13,008 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:14:26,318 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:14:26,368 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:15:29,632 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:16:25,257 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:16:30,858 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:16:50,218 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:16:50,267 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:19:56,644 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:20:04,867 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:21:19,579 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:21:19,625 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:22:54,297 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:22:54,344 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:24:42,006 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:24:54,423 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:25:07,209 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:25:26,520 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:25:51,148 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:27:48,317 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:28:00,495 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:28:00,540 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:30:55,854 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:30:55,903 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:32:52,595 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:32:52,628 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:34:16,507 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:35:49,114 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:36:20,633 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:36:51,548 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:36:51,592 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:37:29,807 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:37:29,851 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:41:13,962 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:41:14,008 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:43:08,903 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:43:08,944 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:43:51,113 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:43:51,156 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:47:48,538 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:47:48,581 [INFO]  * Restarting with watchdog (windowsapi)
+2025-04-20 02:49:05,807 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 02:49:05,849 [INFO]  * Restarting with watchdog (windowsapi)

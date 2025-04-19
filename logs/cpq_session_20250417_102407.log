@@ -1,0 +1,113 @@
+2025-04-17 10:24:07,269 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-17 10:24:13,090 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-17 10:24:19,459 [WARNING] From C:\Users\HP\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-04-17 10:25:30,988 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.log
+2025-04-17 10:25:30,988 [INFO] Calling LangGraph CPQ pipeline
+2025-04-17 10:25:31,049 [INFO] [Orchestrator Agent] User input: ITAM reload for customer name PrimeEdge
+2025-04-17 10:25:31,050 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-17 10:25:31,052 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-17 10:25:31,052 [INFO] [Discovery Agent] Loaded log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.log
+2025-04-17 10:25:31,053 [ERROR] [LLM] Failed to parse or generate response: 'NoneType' object is not callable
+2025-04-17 10:25:31,053 [WARNING] [Discovery Agent] LLM gave no usable output. Falling back to regex.
+2025-04-17 10:25:31,664 [ERROR] Pipeline failed with error: 'int' object has no attribute 'fillna'
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 41, in run_cpq_pipeline
+    state = run_langgraph_cpq(user_query=user_query, filepath=filepath)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 53, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\agents\task_agents.py", line 37, in itam_reload_agent
+    result_df['quantity'] = pd.to_numeric(result_df.get(col_map.get('quantity'), 0), errors='coerce').fillna(0)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'fillna'
+During task with name 'itam_reload' and id 'a3cefa47-3535-e4f6-1491-f2d512dc56cb'
+2025-04-17 10:48:55,303 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/add_new_workstation_network.log
+2025-04-17 10:48:55,304 [INFO] Calling LangGraph CPQ pipeline
+2025-04-17 10:48:55,332 [INFO] [Orchestrator Agent] User input: add workstation  for customer name NetCore Tech
+2025-04-17 10:48:55,332 [INFO] [Orchestrator Agent] Assigned task: add_new_workstation
+2025-04-17 10:48:55,333 [INFO] [Discovery Agent] Invoked for task: add_new_workstation
+2025-04-17 10:48:55,340 [INFO] [Discovery Agent] Loaded log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/add_new_workstation_network.log
+2025-04-17 10:48:55,341 [ERROR] [LLM] Failed to parse or generate response: 'NoneType' object is not callable
+2025-04-17 10:48:55,341 [WARNING] [Discovery Agent] LLM gave no usable output. Falling back to regex.
+2025-04-17 10:48:55,947 [ERROR] Pipeline failed with error: 'int' object has no attribute 'fillna'
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 41, in run_cpq_pipeline
+    state = run_langgraph_cpq(user_query=user_query, filepath=filepath)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 53, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\agents\task_agents.py", line 58, in workstation_agent
+    result_df['quantity'] = pd.to_numeric(result_df.get(col_map.get('quantity'), 0), errors='coerce').fillna(0)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'fillna'
+During task with name 'workstation' and id 'b8f16366-ea81-8a89-43d3-5bc20cdc09f9'
+2025-04-17 11:11:00,811 [INFO] CPQ pipeline started with strategy: langgraph | File: G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logs\itam_reload_network.log
+2025-04-17 11:11:00,811 [INFO] Calling LangGraph CPQ pipeline
+2025-04-17 11:11:00,831 [INFO] [Orchestrator Agent] User input: ITAM reload for customer name PrimeEdge
+2025-04-17 11:11:00,832 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-17 11:11:00,833 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-17 11:11:00,835 [INFO] [Discovery Agent] Loaded log file: G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logs\itam_reload_network.log
+2025-04-17 11:11:00,836 [ERROR] [LLM] Failed to parse or generate response: 'NoneType' object is not callable
+2025-04-17 11:11:00,836 [WARNING] [Discovery Agent] LLM gave no usable output. Falling back to regex.
+2025-04-17 11:11:01,441 [ERROR] Pipeline failed with error: 'int' object has no attribute 'fillna'
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 41, in run_cpq_pipeline
+    state = run_langgraph_cpq(user_query=user_query, filepath=filepath)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 53, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\agents\task_agents.py", line 37, in itam_reload_agent
+    result_df['quantity'] = pd.to_numeric(result_df.get(col_map.get('quantity'), 0), errors='coerce').fillna(0)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'int' object has no attribute 'fillna'
+During task with name 'itam_reload' and id 'e0f27fff-5f7f-710c-fee7-fefcf55ed9b7'

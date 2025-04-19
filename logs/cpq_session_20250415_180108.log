@@ -1,0 +1,9 @@
+2025-04-15 18:01:21,508 [INFO] User selected task: certificate_renewal
+2025-04-15 18:01:45,149 [INFO] User submitted query: certificate renewal for customer name Henry PLC with strategy: crewai
+2025-04-15 18:01:47,679 [INFO] Saved result to: G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_2025-04-15.xlsx
+2025-04-15 18:18:32,560 [INFO] User selected task: itam_reload
+2025-04-15 18:18:52,429 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: crewai
+2025-04-15 18:18:54,986 [INFO] Saved result to: G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_2025-04-15.xlsx
+2025-04-15 18:19:48,589 [INFO] User selected task: itam_reload
+2025-04-15 18:20:08,975 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: crewai
+2025-04-15 18:20:11,524 [INFO] Saved result to: G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_2025-04-15.xlsx

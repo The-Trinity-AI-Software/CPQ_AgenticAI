@@ -1,0 +1,34 @@
+2025-04-15 21:18:10,326 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-15 21:19:29,536 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:19:29,537 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-15 21:19:31,450 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-15 21:26:47,252 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:26:47,253 [INFO] Orchestrator triggered for user query: ITAM reload for customer StephensPLC
+2025-04-15 21:26:48,546 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:27:03,577 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:27:03,577 [INFO] Orchestrator triggered for user query: ITAM reload for customer Stephens PLC
+2025-04-15 21:27:04,897 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:27:37,698 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:27:37,699 [INFO] Orchestrator triggered for user query: ITAM reload for customer Stephens PLC
+2025-04-15 21:27:39,059 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:28:55,495 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:28:55,495 [INFO] Orchestrator triggered for user query: ITAM reload for customer Davidson-Buchanan
+2025-04-15 21:28:56,784 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:29:23,928 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:29:23,929 [INFO] Orchestrator triggered for user query: ITAM reload for customer Davidson-Buchanan
+2025-04-15 21:29:25,817 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-15 21:30:06,942 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 21:30:06,996 [INFO] Orchestrator triggered for user query: ITAM reload for customer Davidson-Buchanan
+2025-04-15 21:30:08,898 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-15 21:32:07,716 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/workstation.xlsx
+2025-04-15 21:32:07,716 [INFO] Orchestrator triggered for user query: add workstation  for customer name 1 path
+2025-04-15 21:32:09,072 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:32:27,805 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/workstation.xlsx
+2025-04-15 21:32:27,805 [INFO] Orchestrator triggered for user query: add workstation  for customer name 1path
+2025-04-15 21:32:29,063 [WARNING] Pipeline returned None or empty state.
+2025-04-15 21:32:51,291 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/workstation.xlsx
+2025-04-15 21:32:51,291 [INFO] Orchestrator triggered for user query: add workstation  for customer name 1path
+2025-04-15 21:32:53,145 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-15 21:39:24,769 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/workstation.xlsx
+2025-04-15 21:39:24,769 [INFO] Orchestrator triggered for user query: add workstation  for customer name 1path
+2025-04-15 21:39:26,010 [WARNING] Pipeline returned None or empty state.

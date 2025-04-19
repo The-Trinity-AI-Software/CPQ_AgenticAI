@@ -1,0 +1,44 @@
+2025-04-15 18:35:27,953 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-15 18:36:21,736 [INFO] User submitted query: certificate renewal for customer name Baker with strategy: langgraph
+2025-04-15 18:36:21,737 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:36:21,737 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:36:21,738 [WARNING] Pipeline returned no result for query: certificate renewal for customer name Baker
+2025-04-15 18:36:31,702 [INFO] User submitted query: certificate renewal for customer name Baker LTD with strategy: langgraph
+2025-04-15 18:36:31,702 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:36:31,703 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:36:31,703 [WARNING] Pipeline returned no result for query: certificate renewal for customer name Baker LTD
+2025-04-15 18:36:33,417 [INFO] User submitted query: certificate renewal for customer name Baker LTD with strategy: langgraph
+2025-04-15 18:36:33,417 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:36:33,418 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:36:33,418 [WARNING] Pipeline returned no result for query: certificate renewal for customer name Baker LTD
+2025-04-15 18:37:09,147 [INFO] User submitted query: certificate renewal for customer name clements-powell with strategy: langgraph
+2025-04-15 18:37:09,147 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:37:09,148 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:37:09,148 [WARNING] Pipeline returned no result for query: certificate renewal for customer name clements-powell
+2025-04-15 18:38:55,562 [INFO] User submitted query: certificate renewal for customer name Clements-powell with strategy: langgraph
+2025-04-15 18:38:55,564 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:38:55,564 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:38:55,564 [WARNING] Pipeline returned no result for query: certificate renewal for customer name Clements-powell
+2025-04-15 18:39:18,577 [INFO] User submitted query: certificate renewal for customer name Davis, Nolan and vaughn with strategy: langgraph
+2025-04-15 18:39:18,577 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-15 18:39:18,578 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:39:18,578 [WARNING] Pipeline returned no result for query: certificate renewal for customer name Davis, Nolan and vaughn
+2025-04-15 18:48:34,636 [INFO] User selected task: itam_reload
+2025-04-15 18:49:04,924 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: langgraph
+2025-04-15 18:49:04,924 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 18:49:04,925 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:49:04,925 [WARNING] Pipeline returned no result for query: ITAM reload for customer name perez-smith
+2025-04-15 18:49:19,793 [INFO] User submitted query: ITAM reload for customer name Perez-Smith with strategy: langgraph
+2025-04-15 18:49:19,794 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 18:49:19,795 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:49:19,795 [WARNING] Pipeline returned no result for query: ITAM reload for customer name Perez-Smith
+2025-04-15 18:55:44,308 [INFO] User selected task: itam_reload
+2025-04-15 18:56:33,711 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: langgraph
+2025-04-15 18:56:33,711 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 18:56:33,711 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 18:56:33,712 [WARNING] Pipeline returned no result for query: ITAM reload for customer name perez-smith
+2025-04-15 19:13:33,294 [INFO] User selected task: itam_reload
+2025-04-15 19:13:56,141 [INFO] User submitted query: ITAM reload for customer name perez-smith with strategy: langgraph
+2025-04-15 19:13:56,141 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-15 19:13:56,141 [ERROR] Pipeline failed: name 'graph' is not defined
+2025-04-15 19:13:56,141 [WARNING] Pipeline returned no result for query: ITAM reload for customer name perez-smith

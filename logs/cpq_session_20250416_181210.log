@@ -1,0 +1,77 @@
+2025-04-16 18:12:10,442 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-16 18:12:15,874 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-16 18:12:22,672 [WARNING] From C:\Users\HP\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-04-16 19:19:23,750 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:19:23,828 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name ByteFusion LLC
+2025-04-16 19:19:23,828 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:19:23,832 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:19:23,833 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:19:24,437 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:23:31,379 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:23:31,399 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name NovaWare
+2025-04-16 19:23:31,399 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:23:31,400 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:23:31,401 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:23:32,004 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:26:58,435 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:26:58,461 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name NovaWare
+2025-04-16 19:26:58,461 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:26:58,462 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:26:58,463 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:26:59,068 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:27:24,846 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:27:24,876 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name NovaWare
+2025-04-16 19:27:24,876 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:27:24,878 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:27:24,878 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:27:25,482 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:27:48,548 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:27:48,573 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name NovaWare
+2025-04-16 19:27:48,573 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:27:48,574 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:27:48,574 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:27:49,178 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:36:17,243 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:36:17,263 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name CoreSystems
+2025-04-16 19:36:17,264 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:36:17,267 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:36:17,268 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:36:17,872 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:48:35,871 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:48:35,908 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name ByteFusion LLC
+2025-04-16 19:48:35,908 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:48:35,909 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:48:35,910 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:48:36,513 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 19:56:40,955 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:56:40,983 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name NovaWare 
+2025-04-16 19:56:40,983 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 19:56:40,984 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 19:56:40,985 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 19:56:41,589 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 20:07:58,652 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:07:58,678 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name AstraTech Inc.
+2025-04-16 20:07:58,679 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 20:07:58,681 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 20:07:58,682 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:07:59,286 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 20:08:08,771 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:08,783 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name AstraTech Inc.
+2025-04-16 20:08:08,783 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 20:08:08,784 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 20:08:08,784 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:09,387 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 20:08:14,166 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:14,184 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name AstraTech Inc
+2025-04-16 20:08:14,184 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 20:08:14,185 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 20:08:14,185 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:14,792 [ERROR] Pipeline failed with error: 'matched_df'
+2025-04-16 20:08:23,625 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:23,642 [INFO] [Orchestrator Agent] Triggered with input: ITAM reload for customer name AstraTech 
+2025-04-16 20:08:23,643 [INFO] [Orchestrator Agent] Assigned task: itam_reload
+2025-04-16 20:08:23,645 [INFO] [Discovery Agent] Invoked for task: itam_reload
+2025-04-16 20:08:23,648 [ERROR] [Discovery Agent] Filepath missing or invalid: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_network.txt
+2025-04-16 20:08:24,252 [ERROR] Pipeline failed with error: 'matched_df'

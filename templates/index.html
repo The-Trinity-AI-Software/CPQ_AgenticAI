@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPQ Agentic Workflow</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .container { max-width: 800px; margin: auto; }
+        textarea, select, input { width: 100%; padding: 10px; margin: 10px 0; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { padding: 8px; border: 1px solid #ccc; text-align: left; }
+        .btn { padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        .btn:hover { background-color: #0056b3; }
+        .success { color: green; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>🤖 CPQ Agentic Workflow</h2>
+
+    <label>Select Agentic Strategy:</label>
+    <select id="strategy">
+        <option value="langgraph">LangGraph</option>
+        <option value="crewai">CrewAI</option>
+        <option value="autogen">AutoGen</option>
+    </select>
+
+    <label>Select Deal Type:</label>
+    <select id="task">
+        <option value="itam_reload">ITAM Reload</option>
+        <option value="certificate_renewal">Certificate Renewal</option>
+        <option value="add_new_workstation">Add New Workstation</option>
+    </select>
+
+    <button class="btn" onclick="loadTemplate()">📋 Load Template</button>
+
+    <div id="templatePreview"></div>
+
+    <label>Enter CPQ Request:</label>
+    <textarea id="query" rows="4" placeholder="e.g., cert renewal for customer CUST083"></textarea>
+
+    <button class="btn" onclick="submitQuery()">🚀 Submit Query</button>
+
+    <div class="success" id="summary"></div>
+
+    <div id="outputTable"></div>
+</div>
+
+<script>
+    async function loadTemplate() {
+        const task = document.getElementById("task").value;
+        const previewDiv = document.getElementById("templatePreview");
+        previewDiv.innerHTML = "Loading...";
+
+        const res = await fetch(`/cpq/template?task=${task}`);
+        const data = await res.json();
+
+        if (!Array.isArray(data)) {
+            previewDiv.innerHTML = "<b>Error loading template</b>";
+            return;
+        }
+
+        let html = "<h4>📄 Template Preview</h4><table><thead><tr>";
+        Object.keys(data[0]).forEach(col => html += `<th>${col}</th>`);
+        html += "</tr></thead><tbody>";
+        data.forEach(row => {
+            html += "<tr>";
+            Object.values(row).forEach(val => html += `<td>${val || ""}</td>`);
+            html += "</tr>";
+        });
+        html += "</tbody></table>";
+        previewDiv.innerHTML = html;
+    }
+
+    async function submitQuery() {
+        const strategy = document.getElementById("strategy").value;
+        const task = document.getElementById("task").value;
+        const query = document.getElementById("query").value;
+        const res = await fetch("/cpq/predict", {
+            method: "POST",
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ strategy, task, query })
+        });
+        const data = await res.json();
+
+        const summary = document.getElementById("summary");
+        const outputDiv = document.getElementById("outputTable");
+
+        if (data.error) {
+            summary.innerHTML = "🚫 " + data.error;
+            outputDiv.innerHTML = "";
+            return;
+        }
+
+        summary.innerHTML = `✅ Grand Total: $${data.grand_total.toFixed(2)}`;
+        let html = "<h4>📊 CPQ Output</h4><table><thead><tr>";
+        Object.keys(data.records[0]).forEach(col => html += `<th>${col}</th>`);
+        html += "</tr></thead><tbody>";
+        data.records.forEach(row => {
+            html += "<tr>";
+            Object.values(row).forEach(val => html += `<td>${val || ""}</td>`);
+            html += "</tr>";
+        });
+        html += "</tbody></table>";
+
+        html += `<p><a class="btn" href="/cpq/download?path=${data.download}" target="_blank">⬇️ Download Excel</a></p>`;
+
+        outputDiv.innerHTML = html;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr 20 01:42:36 2025
+
+@author: HP
+"""
+
+# agentic_evaluation.py
+
+import time
+import pandas as pd
+from logic.application_logic import run_cpq_pipeline
+
+
+def evaluate_strategy(query, filepath, strategy):
+    start_time = time.time()
+    result = run_cpq_pipeline(user_query=query, filepath=filepath, strategy=strategy)
+    end_time = time.time()
+    
+    if not result or result.get("result_df", pd.DataFrame()).empty:
+        return {
+            "strategy": strategy,
+            "accuracy": 0,
+            "latency": round(end_time - start_time, 2),
+            "completeness": 0,
+            "status": "failed"
+        }
+
+    df = result["result_df"]
+    df = df[df["Component"].str.lower() != "grand total"] if "Component" in df.columns else df
+    
+    accuracy = 100 if not df.empty else 0
+    completeness = len(df)
+
+    return {
+        "strategy": strategy,
+        "accuracy": accuracy,
+        "latency": round(end_time - start_time, 2),
+        "completeness": completeness,
+        "status": "success"
+    }
+
+
+def compare_strategies(query, filepath):
+    strategies = ["langgraph", "crewai", "autogen"]
+    evaluations = [evaluate_strategy(query, filepath, s) for s in strategies]
+
+    best = max(evaluations, key=lambda x: (x["accuracy"], -x["latency"]))
+    summary = {
+        "evaluations": evaluations,
+        "recommended": best["strategy"],
+        "reason": f"{best['strategy'].capitalize()} is most accurate with latency {best['latency']}s"
+    }
+    return summary

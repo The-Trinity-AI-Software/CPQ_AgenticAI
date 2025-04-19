@@ -1,0 +1,324 @@
+2025-04-20 00:07:23,058 [ERROR] [LLM Loader] Failed to load TinyLlama model: models/TinyLlama-1.1B-Chat-v1.0 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
+2025-04-20 00:07:27,779 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 00:07:34,164 [WARNING] From C:\Users\HP\anaconda3\Lib\site-packages\keras\src\backend\common\global_state.py:82: The name tf.reset_default_graph is deprecated. Please use tf.compat.v1.reset_default_graph instead.
+
+2025-04-20 00:21:34,975 [INFO] [Pipeline Start] Strategy: langgraph, Query: deal for new workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 00:21:35,054 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:21:35,055 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    state = run_langgraph_cpq(user_query=user_query, filepath=filepath)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id 'f604c274-d77d-7c16-3cec-4362db56585a'
+2025-04-20 00:22:15,496 [INFO] [Pipeline Start] Strategy: langgraph, Query: deal for new workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:22:15,522 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:22:15,523 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:22:15,535 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:22:15,537 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:22:15,538 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:22:15,539 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:22:33,755 [INFO] [Pipeline Start] Strategy: autogen, Query: deal for new workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:22:33,756 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 00:22:33,757 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:22:33,758 [INFO] Orchestrator determined task: unknown
+2025-04-20 00:22:33,761 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:22:33,768 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:22:33,769 [WARNING] No matched data found.
+2025-04-20 00:22:33,770 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 00:25:07,061 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:25:07,103 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:25:07,109 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:25:07,117 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:25:07,119 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:25:07,120 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:25:07,122 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:28:01,211 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:28:01,243 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:28:01,246 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:28:01,249 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:28:01,251 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:28:01,252 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:28:01,253 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:28:20,947 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:28:20,970 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:28:20,972 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:28:20,984 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:28:20,985 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:28:20,986 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:28:20,987 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:30:33,277 [INFO] [Pipeline Start] Strategy: langgraph, Query: certificate renewal for customer name Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:30:33,327 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:30:33,337 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:30:33,338 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:30:33,340 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:30:33,341 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:30:33,342 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:32:57,626 [INFO] [Pipeline Start] Strategy: langgraph, Query: certificate renewal for customer name Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:32:57,662 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:32:57,664 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:32:57,664 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:32:57,665 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:32:57,665 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:32:57,666 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:33:53,472 [INFO] [Pipeline Start] Strategy: langgraph, Query: cert renewal for customer CUST083, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:33:53,496 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:33:53,500 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:33:53,500 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:33:53,502 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:33:53,505 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:33:53,506 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:41:27,293 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name primeEdge, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:41:27,338 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:41:27,342 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:41:27,352 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:41:27,354 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:41:27,354 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:41:27,355 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:44:41,095 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name primeEdge, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:44:41,128 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:44:41,130 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 00:44:41,134 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 00:44:41,135 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:44:41,135 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:44:41,136 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:47:57,339 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name primeEdge, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:47:57,379 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:47:57,381 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:47:57,381 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:47:57,382 [INFO] [Validation Agent] Validating output result
+2025-04-20 00:47:57,383 [WARNING] [Validation Agent] Result is empty
+2025-04-20 00:47:57,384 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 00:56:50,515 [INFO] [Pipeline Start] Strategy: crewai, Query: certificate renewal for customer Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:56:50,516 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 00:56:50,517 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:56:50,517 [INFO] Orchestrator determined task: unknown
+2025-04-20 00:56:50,522 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:56:50,522 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:56:50,524 [WARNING] No matched data found.
+2025-04-20 00:56:50,524 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 00:59:13,710 [INFO] [Pipeline Start] Strategy: crewai, Query: certificate renewal for customer Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:59:13,711 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 00:59:13,711 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:59:13,712 [INFO] Orchestrator determined task: unknown
+2025-04-20 00:59:13,716 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:59:13,716 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:59:13,717 [WARNING] No matched data found.
+2025-04-20 00:59:13,717 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 00:59:17,445 [INFO] [Pipeline Start] Strategy: crewai, Query: certificate renewal for customer Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:59:17,446 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 00:59:17,447 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 00:59:17,448 [INFO] Orchestrator determined task: unknown
+2025-04-20 00:59:17,450 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/certificate_renewal_log.log
+2025-04-20 00:59:17,450 [WARNING] [Discovery Agent] No matches found in log.
+2025-04-20 00:59:17,451 [WARNING] No matched data found.
+2025-04-20 00:59:17,451 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 01:05:32,662 [INFO] [Pipeline Start] Strategy: crewai, Query: certificate renewal for customer Company_36, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:05:32,662 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 01:05:32,663 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:05:32,663 [INFO] Orchestrator determined task: unknown
+2025-04-20 01:05:32,667 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:05:32,673 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 01:05:32,676 [WARNING] No matched data found.
+2025-04-20 01:05:32,676 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 01:09:56,846 [INFO] [Pipeline Start] Strategy: crewai, Query: itam reload for customer CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:09:56,846 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 01:09:56,846 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:09:56,846 [INFO] Orchestrator determined task: unknown
+2025-04-20 01:09:56,850 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:09:56,855 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 01:09:56,855 [WARNING] No matched data found.
+2025-04-20 01:09:56,855 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 01:10:26,722 [INFO] [Pipeline Start] Strategy: crewai, Query: itam reload for customer  id C106, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:10:26,723 [INFO] Starting CrewAI CPQ pipeline...
+2025-04-20 01:10:26,723 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:10:26,723 [INFO] Orchestrator determined task: unknown
+2025-04-20 01:10:26,724 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:10:26,731 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 01:10:26,733 [WARNING] No matched data found.
+2025-04-20 01:10:26,733 [WARNING] [Pipeline] Empty or invalid state returned.
+2025-04-20 01:14:07,451 [INFO] [Pipeline Start] Strategy: langgraph, Query: ITAM reload for customer name CloudNova, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:14:07,475 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:14:07,477 [INFO] [Discovery Agent] Processing log file: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/logs/itam_reload_log.log
+2025-04-20 01:14:07,484 [INFO] [Discovery Agent] Extracted 0 unique device logs
+2025-04-20 01:14:07,485 [INFO] [Validation Agent] Validating output result
+2025-04-20 01:14:07,486 [WARNING] [Validation Agent] Result is empty
+2025-04-20 01:14:07,487 [INFO] [Pipeline Success] Completed run_cpq_pipeline
+2025-04-20 01:21:04,263 [INFO] [Pipeline Start] Strategy: langgraph, Query: workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 01:21:04,292 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:21:04,303 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    if strategy == "langgraph":
+                ^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id 'e2ff7f49-3171-2ff8-a05d-d363b3ea01fc'
+2025-04-20 01:21:12,000 [INFO] [Pipeline Start] Strategy: langgraph, Query: workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 01:21:12,036 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:21:12,041 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    if strategy == "langgraph":
+                ^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id '318780fe-6b60-0b5f-b601-188f07b25f36'
+2025-04-20 01:23:18,230 [INFO] [Pipeline Start] Strategy: langgraph, Query: workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 01:23:18,248 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:23:18,249 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    if strategy == "langgraph":
+                ^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id 'b71bb8a1-ef2f-daff-ea43-eb097099dc7a'
+2025-04-20 01:23:22,067 [INFO] [Pipeline Start] Strategy: langgraph, Query: workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 01:23:22,098 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:23:22,100 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    if strategy == "langgraph":
+                ^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id '27821402-4482-4b3b-f928-99e7ec9a0db0'
+2025-04-20 01:23:31,341 [INFO] [Pipeline Start] Strategy: langgraph, Query: workstation for customer English Group, Filepath: G:/MVP/mnt/data/CPQ_Agentic_LLM_Workflow/excel/add_new_workstation_deal.xlsx
+2025-04-20 01:23:31,370 [ERROR] [Orchestrator Agent] LLM failed: 'NoneType' object is not callable
+2025-04-20 01:23:31,374 [ERROR] \u274c Pipeline execution failed with error:
+Traceback (most recent call last):
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\logic\application_logic.py", line 39, in run_cpq_pipeline
+    if strategy == "langgraph":
+                ^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\llm_strategies\langgraph_CPQ.py", line 49, in run_langgraph_cpq
+    final_state = graph.invoke({
+                  ^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2683, in invoke
+    for chunk in self.stream(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\__init__.py", line 2331, in stream
+    for _ in runner.tick(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\runner.py", line 146, in tick
+    run_with_retry(
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\pregel\retry.py", line 40, in run_with_retry
+    return task.proc.invoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 606, in invoke
+    input = step.invoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\anaconda3\Lib\site-packages\langgraph\utils\runnable.py", line 371, in invoke
+    ret = context.run(self.func, *args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\MVP\mnt\data\CPQ_Agentic_LLM_Workflow\core_agents\core_agents.py", line 41, in discovery_agent
+    log_data = f.read()
+               ^^^^^^^^
+  File "<frozen codecs>", line 322, in decode
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0x8f in position 22: invalid start byte
+During task with name 'discovery' and id '5a9527ab-acdf-9882-0e2f-dfb5bb1a3353'
