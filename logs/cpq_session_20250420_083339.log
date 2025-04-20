@@ -1,0 +1,2 @@
+2025-04-20 08:33:46,372 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:33:49,064 [INFO]  * Restarting with watchdog (windowsapi)

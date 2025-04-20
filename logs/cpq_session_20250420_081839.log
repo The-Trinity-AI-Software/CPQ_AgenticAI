@@ -1,0 +1,4 @@
+2025-04-20 08:18:46,477 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:18:50,195 [WARNING]  * Debugger is active!
+2025-04-20 08:18:50,199 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:18:50,396 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)

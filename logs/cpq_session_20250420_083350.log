@@ -1,0 +1,10 @@
+2025-04-20 08:33:57,429 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:34:01,222 [WARNING]  * Debugger is active!
+2025-04-20 08:34:01,225 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:34:01,424 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:34:06,492 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:06] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:34:06,627 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:34:06,816 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:06] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:34:07,189 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:07] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:34:07,190 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:34:07,437 [INFO] 127.0.0.1 - - [20/Apr/2025 08:34:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -

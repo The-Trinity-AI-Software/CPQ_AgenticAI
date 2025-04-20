@@ -1,0 +1,23 @@
+2025-04-20 08:36:22,200 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:36:26,475 [WARNING]  * Debugger is active!
+2025-04-20 08:36:26,480 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:36:26,703 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:36:31,181 [INFO] 127.0.0.1 - - [20/Apr/2025 08:36:31] "GET / HTTP/1.1" 200 -
+2025-04-20 08:36:41,129 [INFO] 127.0.0.1 - - [20/Apr/2025 08:36:41] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-20 08:37:03,771 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:37:03,771 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:37:03,772 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:37:05,178 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\env_util.py', reloading
+2025-04-20 08:37:05,181 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\delta_generator.py', reloading
+2025-04-20 08:37:05,184 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\elements\\markdown.py', reloading
+2025-04-20 08:37:05,186 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\runtime\\metrics_util.py', reloading
+2025-04-20 08:37:05,209 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\cpq_agentic_workflow\\agents\\task_agents.py', reloading
+2025-04-20 08:37:05,215 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-04-20 08:37:05,218 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-04-20 08:37:05,221 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\http\\server.py', reloading
+2025-04-20 08:37:05,224 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\socketserver.py', reloading
+2025-04-20 08:37:05,226 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\threading.py', reloading

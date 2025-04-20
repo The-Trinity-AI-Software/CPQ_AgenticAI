@@ -1,0 +1,7 @@
+2025-04-20 08:03:39,550 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:03:43,381 [WARNING]  * Debugger is active!
+2025-04-20 08:03:43,385 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:03:43,592 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:04:00,280 [INFO] 127.0.0.1 - - [20/Apr/2025 08:04:00] "[33mGET / HTTP/1.1[0m" 404 -
+2025-04-20 08:04:00,360 [INFO] 127.0.0.1 - - [20/Apr/2025 08:04:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-20 08:05:20,513 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\jedi\\inference\\sys_path.py', reloading

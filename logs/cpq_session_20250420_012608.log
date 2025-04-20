@@ -1,0 +1,12 @@
+2025-04-20 01:26:13,934 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 01:26:56,423 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 01:26:56,423 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 01:26:56,424 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-20 01:26:56,425 [INFO] Orchestrator determined task: itam_reload
+2025-04-20 01:26:57,099 [INFO] Discovery agent matched 8 rows.
+2025-04-20 01:26:57,718 [INFO] Task agent (itam_reload) executed successfully.
+2025-04-20 01:26:58,321 [INFO] Validation agent completed successfully.
+2025-04-20 01:26:58,322 [INFO] Pipeline executed successfully for strategy: autogen
+2025-04-20 01:27:28,632 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 01:27:28,632 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-20 01:27:30,502 [INFO] Pipeline executed successfully for strategy: crewai

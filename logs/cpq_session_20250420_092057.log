@@ -1,0 +1,13 @@
+2025-04-20 09:21:04,013 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 09:21:07,906 [WARNING]  * Debugger is active!
+2025-04-20 09:21:07,909 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 09:21:08,104 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 09:21:11,651 [INFO] 127.0.0.1 - - [20/Apr/2025 09:21:11] "GET / HTTP/1.1" 200 -
+2025-04-20 09:21:34,383 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 09:21:34,410 [INFO] Orchestrator triggered for user query: itam reload for customer Perez-Smith
+2025-04-20 09:21:34,420 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 09:21:36,010 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading

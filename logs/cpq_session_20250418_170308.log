@@ -1,0 +1,4 @@
+2025-04-18 17:03:15,445 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-18 17:03:40,900 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-18 17:03:40,979 [INFO] Orchestrator triggered for user query: ITAM reload for customer name perez-smith
+2025-04-18 17:03:42,906 [INFO] Pipeline executed successfully for strategy: langgraph

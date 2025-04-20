@@ -7,6 +7,9 @@ import time
 from utils.normalize import normalize_column_mapping
 from prompts.agent_prompts import ORCHESTRATION_PROMPT, DISCOVERY_AGENT_PROMPT
 
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from fuzzywuzzy import fuzz
 from fuzzywuzzy import process
 from logic.logger_setup import setup_logger

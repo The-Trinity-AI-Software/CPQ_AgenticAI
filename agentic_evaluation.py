@@ -9,8 +9,10 @@ Created on Sun Apr 20 01:42:36 2025
 
 import time
 import pandas as pd
+import sys
 from logic.application_logic import run_cpq_pipeline
-
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 def evaluate_strategy(query, filepath, strategy):
     start_time = time.time()

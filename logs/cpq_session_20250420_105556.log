@@ -1,0 +1,94 @@
+2025-04-20 10:56:02,568 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 10:56:06,940 [WARNING]  * Debugger is active!
+2025-04-20 10:56:06,944 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 10:56:07,153 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 10:56:07,497 [INFO] 127.0.0.1 - - [20/Apr/2025 10:56:07] "GET / HTTP/1.1" 200 -
+2025-04-20 10:56:09,350 [INFO] 127.0.0.1 - - [20/Apr/2025 10:56:09] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-20 10:56:32,835 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:32,874 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:32,875 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:34,666 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:34,668 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:34,668 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 10:56:34,730 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:34,740 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:34,741 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:35,381 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:35,381 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:35,382 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 10:56:35,383 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:35,383 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:35,384 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:36,014 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:36,015 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:36,016 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 10:56:36,017 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:36,017 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 10:56:36,017 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:36,017 [INFO] Orchestrator determined task: itam_reload
+2025-04-20 10:56:36,017 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:36,045 [INFO] Discovery agent matched 6 rows.
+2025-04-20 10:56:36,651 [INFO] Task agent (itam_reload) executed successfully.
+2025-04-20 10:56:36,651 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:36,651 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:36,652 [INFO] Validation agent completed successfully.
+2025-04-20 10:56:36,652 [INFO] Pipeline executed successfully for strategy: autogen
+2025-04-20 10:56:36,656 [INFO] 127.0.0.1 - - [20/Apr/2025 10:56:36] "POST /cpq/predict HTTP/1.1" 200 -
+2025-04-20 10:56:36,972 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:36,981 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:36,982 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:37,617 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:37,618 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:37,619 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 10:56:37,620 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:37,620 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:37,620 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:38,251 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:38,252 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:38,252 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 10:56:38,253 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 10:56:38,253 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 10:56:38,253 [INFO] Orchestrator triggered for user query: itam reload for customer Stephens PLC
+2025-04-20 10:56:38,254 [INFO] Orchestrator determined task: itam_reload
+2025-04-20 10:56:38,254 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 10:56:38,301 [INFO] Discovery agent matched 6 rows.
+2025-04-20 10:56:38,909 [INFO] Task agent (itam_reload) executed successfully.
+2025-04-20 10:56:38,909 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 10:56:38,910 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 10:56:38,910 [INFO] Validation agent completed successfully.
+2025-04-20 10:56:38,910 [INFO] Pipeline executed successfully for strategy: autogen
+2025-04-20 10:56:38,913 [INFO] 127.0.0.1 - - [20/Apr/2025 10:56:38] "[35m[1mGET /cpq/performance?task=itam_reload&query=itam%20reload%20for%20customer%20Stephens%20PLC HTTP/1.1[0m" 500 -
+2025-04-20 10:59:43,280 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 10:59:43,281 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\tmpi4i2byn3', reloading
+2025-04-20 10:59:43,282 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 10:59:43,288 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 10:59:43,288 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\tmpi4i2byn3', reloading
+2025-04-20 10:59:43,289 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading

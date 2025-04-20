@@ -1,0 +1,9 @@
+2025-04-20 08:10:17,352 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:10:21,088 [WARNING]  * Debugger is active!
+2025-04-20 08:10:21,092 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:10:21,282 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:10:26,056 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-04-20 08:10:26,079 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-04-20 08:10:26,080 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-04-20 08:10:26,095 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-04-20 08:10:26,098 [INFO] 127.0.0.1 - - [20/Apr/2025 08:10:26] "[35m[1mGET / HTTP/1.1[0m" 500 -

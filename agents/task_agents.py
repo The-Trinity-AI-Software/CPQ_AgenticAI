@@ -60,20 +60,5 @@ def workstation_agent(state):
     state["result_df"] = calculate_total(result_df, lambda df: df['quantity'] * df['price'])
     return state
 
-def firewall_replacement_agent(state):
-    show_handshake("Firewall Replacement Agent", "Processing firewall component replacements.")
-    matched_df = state["matched_df"]
-    col_map = normalize_column_mapping(matched_df)
-    result_df = matched_df.copy()
-    result_df['quantity'] = pd.to_numeric(result_df.get(col_map.get('quantity'), 0), errors='coerce').fillna(0)
-    result_df['price'] = pd.to_numeric(result_df.get(col_map.get('price'), 0.0), errors='coerce').fillna(0.0)
-    state["result_df"] = calculate_total(result_df, lambda df: df['quantity'] * df['price'])
-    return state
 
 
-# Overwrite task_agents.py with complete logic
-#task_agents_path = os.path.join(base_dir, "agents", "task_agents.py")
-#with open(task_agents_path, "w", encoding="utf-8") as f:
-    #f.write(final_task_agents_logic)
-
-#task_agents_path

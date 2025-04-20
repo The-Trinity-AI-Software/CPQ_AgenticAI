@@ -1,0 +1,10 @@
+2025-04-20 09:50:10,016 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 09:50:14,454 [WARNING]  * Debugger is active!
+2025-04-20 09:50:14,457 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 09:50:14,678 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 09:54:32,672 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\cpq_agentic_workflow\\ui\\main.py', reloading
+2025-04-20 09:54:32,672 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 09:54:32,674 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\cpq_agentic_workflow\\ui\\tmpd0plehir', reloading
+2025-04-20 09:54:32,675 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\tmpd0plehir', reloading
+2025-04-20 09:54:32,676 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 09:54:32,676 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\cpq_agentic_workflow\\ui\\main.py', reloading

@@ -1,0 +1,149 @@
+2025-04-20 08:37:31,862 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:37:35,641 [WARNING]  * Debugger is active!
+2025-04-20 08:37:35,645 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:37:35,840 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:38:46,122 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:38:46,122 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:38:46,122 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:38:48,379 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:38:48,381 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:38:48,382 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:38:48,456 [INFO] 127.0.0.1 - - [20/Apr/2025 08:38:48] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:39,355 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:39,355 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:39,355 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:39,984 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:39,984 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:39,985 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:40,034 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:40] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:40,327 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:40,327 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:40,327 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:40,962 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:40,962 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:40,963 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:41,011 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:41] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:42,409 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:42] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-20 08:45:48,358 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:48,358 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:48,358 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:48,985 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:48,985 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:48,986 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:49,033 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:49] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:49,519 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:49,519 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:49,519 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:49,768 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:49,769 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:49,769 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:49,913 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:49,914 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:49,914 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:50,145 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:50,145 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:50,146 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:50,199 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:50] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:50,215 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:50,215 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:50,215 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:50,415 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:50,417 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:50,417 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:50,428 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:50,428 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:50,428 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:50,489 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:50] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:50,557 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:50,557 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:50,558 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:50,608 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:50] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:50,636 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:50,636 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:50,636 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:50,809 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:50,809 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:50,809 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:50,845 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:50,846 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:50,846 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:50,905 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:50] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:51,064 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:51,065 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:51,065 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:51,114 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:51] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:51,152 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:51,152 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:51,152 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:51,273 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:51,274 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:51,274 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:51,324 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:51] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:51,440 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:51,440 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:51,441 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:51,490 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:51] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:51,672 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:45:51,672 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:45:51,672 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:45:51,780 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:51,780 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:51,781 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:51,830 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:51] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:45:52,303 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:45:52,303 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:45:52,304 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:45:52,354 [INFO] 127.0.0.1 - - [20/Apr/2025 08:45:52] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:48:23,917 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Scripts\\conda-script.py', reloading

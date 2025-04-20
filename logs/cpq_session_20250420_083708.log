@@ -1,0 +1,18 @@
+2025-04-20 08:37:14,504 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:37:18,198 [WARNING]  * Debugger is active!
+2025-04-20 08:37:18,202 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:37:18,401 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:37:18,571 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 08:37:18,571 [INFO] Orchestrator triggered for user query: certificate renewal for customer Baker Ltd
+2025-04-20 08:37:18,571 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:37:20,955 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:37:20,956 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:37:20,957 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 08:37:21,052 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-04-20 08:37:21,058 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\json\\__init__.py', reloading
+2025-04-20 08:37:21,059 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\json\\encoder.py', reloading
+2025-04-20 08:37:21,066 [INFO] 127.0.0.1 - - [20/Apr/2025 08:37:21] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -

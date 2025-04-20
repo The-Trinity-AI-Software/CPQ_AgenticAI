@@ -100,8 +100,7 @@ def run_agent_with_prompt(agent_key: str, state: dict):
         return certificate_renewal_agent(state)
     elif agent_key == "add_new_workstation":
         return workstation_agent(state)
-    elif agent_key == "firewall_replacement":
-        return firewall_replacement_agent(state)
+    
     elif agent_key == "validation":
         return validation_agent(state)
     else:

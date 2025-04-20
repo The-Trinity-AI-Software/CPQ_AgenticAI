@@ -1,0 +1,32 @@
+2025-04-20 08:22:08,683 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:22:12,473 [WARNING]  * Debugger is active!
+2025-04-20 08:22:12,477 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:22:12,672 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:22:12,835 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:22:12,969 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:12] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:22:13,070 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:13] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:22:13,446 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:13] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:22:13,446 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:22:13,696 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:13] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:22:16,691 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:22:16,962 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:16] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:22:17,009 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:17] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:22:17,338 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:17] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:22:17,339 [INFO] 127.0.0.1 - - [20/Apr/2025 08:22:17] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:26:54,660 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:54] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:26:54,676 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:54] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:26:54,885 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:54] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:26:55,217 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:55] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:26:55,218 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:55] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:26:58,677 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:26:58,952 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:58] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:26:59,000 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:26:59,328 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:59] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:26:59,329 [INFO] 127.0.0.1 - - [20/Apr/2025 08:26:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:31:50,262 [INFO] 127.0.0.1 - - [20/Apr/2025 08:31:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-04-20 08:31:50,536 [INFO] 127.0.0.1 - - [20/Apr/2025 08:31:50] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-20 08:31:50,582 [INFO] 127.0.0.1 - - [20/Apr/2025 08:31:50] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-20 08:31:50,912 [INFO] 127.0.0.1 - - [20/Apr/2025 08:31:50] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2025-04-20 08:31:50,913 [INFO] 127.0.0.1 - - [20/Apr/2025 08:31:50] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-20 08:33:24,486 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pylsp\\plugins\\jedi_completion.py', reloading
+2025-04-20 08:33:24,487 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\jedi\\api\\completion.py', reloading

@@ -1,0 +1,94 @@
+2025-04-20 08:51:04,034 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 08:51:07,881 [WARNING]  * Debugger is active!
+2025-04-20 08:51:07,886 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 08:51:08,103 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 08:52:30,513 [INFO] 127.0.0.1 - - [20/Apr/2025 08:52:30] "GET / HTTP/1.1" 200 -
+2025-04-20 08:52:34,535 [INFO] 127.0.0.1 - - [20/Apr/2025 08:52:34] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-20 08:52:57,700 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:52:57,735 [INFO] Orchestrator triggered for user query: itam reload for customer perez-smith
+2025-04-20 08:52:57,736 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:52:59,511 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:52:59,513 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:52:59,513 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:52:59,612 [INFO] 127.0.0.1 - - [20/Apr/2025 08:52:59] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:53:03,466 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:53:03,475 [INFO] Orchestrator triggered for user query: itam reload for customer perez-smith
+2025-04-20 08:53:03,477 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:53:04,118 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:53:04,119 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:53:04,120 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:53:04,172 [INFO] 127.0.0.1 - - [20/Apr/2025 08:53:04] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:53:08,302 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:53:08,311 [INFO] Orchestrator triggered for user query: itam reload for customer perez-smith
+2025-04-20 08:53:08,311 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:53:08,783 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:53:08,794 [INFO] Orchestrator triggered for user query: itam reload for customer perez-smith
+2025-04-20 08:53:08,794 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:53:08,948 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:53:08,949 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:53:08,950 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:53:09,011 [INFO] 127.0.0.1 - - [20/Apr/2025 08:53:09] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:53:09,440 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:53:09,442 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:53:09,442 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:53:09,509 [INFO] 127.0.0.1 - - [20/Apr/2025 08:53:09] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:53:20,118 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:53:20,129 [INFO] Orchestrator triggered for user query: itam reload for customer Perez-Smith
+2025-04-20 08:53:20,131 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:53:20,777 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:53:20,778 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:53:20,779 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:53:20,845 [INFO] 127.0.0.1 - - [20/Apr/2025 08:53:20] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 08:53:27,764 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 08:53:27,773 [INFO] Orchestrator triggered for user query: itam reload for customer Perez-Smith
+2025-04-20 08:53:27,774 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 08:53:28,410 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 08:53:28,411 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 08:53:28,412 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 08:53:28,475 [INFO] 127.0.0.1 - - [20/Apr/2025 08:53:28] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 09:06:18,098 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 09:06:18,107 [INFO] Orchestrator triggered for user query: itam reload for customer Perez-Smith
+2025-04-20 09:06:18,108 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 09:06:18,742 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 09:06:18,743 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 09:06:18,743 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 09:06:18,797 [INFO] 127.0.0.1 - - [20/Apr/2025 09:06:18] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -
+2025-04-20 09:06:18,936 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 09:06:18,946 [INFO] Orchestrator triggered for user query: itam reload for customer Perez-Smith
+2025-04-20 09:06:18,946 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 09:06:19,584 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 09:06:19,585 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 09:06:19,586 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 09:06:19,659 [INFO] 127.0.0.1 - - [20/Apr/2025 09:06:19] "[35m[1mPOST /cpq/predict HTTP/1.1[0m" 500 -

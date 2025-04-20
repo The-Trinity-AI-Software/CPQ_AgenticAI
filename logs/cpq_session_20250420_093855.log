@@ -1,0 +1,23 @@
+2025-04-20 09:39:01,483 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 09:39:05,425 [WARNING]  * Debugger is active!
+2025-04-20 09:39:05,428 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 09:39:05,654 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 09:39:07,464 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 09:39:07,488 [INFO] Orchestrator triggered for user query: ITAM Reload for cutomer Perez-Smith
+2025-04-20 09:39:07,489 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 09:39:08,663 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\env_util.py', reloading
+2025-04-20 09:39:08,666 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\delta_generator.py', reloading
+2025-04-20 09:39:08,668 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\elements\\markdown.py', reloading
+2025-04-20 09:39:08,671 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\streamlit\\runtime\\metrics_util.py', reloading
+2025-04-20 09:39:08,683 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-04-20 09:39:08,685 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-04-20 09:39:08,688 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\http\\server.py', reloading
+2025-04-20 09:39:08,690 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\socketserver.py', reloading
+2025-04-20 09:39:08,695 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\threading.py', reloading
+2025-04-20 09:39:09,304 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 09:39:09,306 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 09:39:09,306 [INFO] Pipeline executed successfully for strategy: langgraph

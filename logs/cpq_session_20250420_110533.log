@@ -1,0 +1,17 @@
+2025-04-20 11:05:40,898 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 11:05:44,984 [WARNING]  * Debugger is active!
+2025-04-20 11:05:44,988 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 11:05:45,207 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 11:05:47,514 [INFO] 127.0.0.1 - - [20/Apr/2025 11:05:47] "GET / HTTP/1.1" 200 -
+2025-04-20 11:05:49,218 [INFO] 127.0.0.1 - - [20/Apr/2025 11:05:49] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-20 11:06:06,169 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 11:06:06,207 [INFO] Orchestrator triggered for user query: ITAM Reload for customer Stephens PLC
+2025-04-20 11:06:06,208 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:06:07,349 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\langgraph\\utils\\runnable.py', reloading
+2025-04-20 11:06:07,351 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\langgraph\\pregel\\retry.py', reloading
+2025-04-20 11:06:07,353 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\langgraph\\pregel\\runner.py', reloading
+2025-04-20 11:06:07,356 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\langgraph\\pregel\\__init__.py', reloading
