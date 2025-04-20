@@ -10,6 +10,7 @@ Created on Sun Apr 20 01:42:36 2025
 import time
 import pandas as pd
 import sys
+import random
 from logic.application_logic import run_cpq_pipeline
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -18,6 +19,7 @@ def evaluate_strategy(query, filepath, strategy):
     start_time = time.time()
     result = run_cpq_pipeline(user_query=query, filepath=filepath, strategy=strategy)
     end_time = time.time()
+    
     
     if not result or result.get("result_df", pd.DataFrame()).empty:
         return {
@@ -43,14 +45,21 @@ def evaluate_strategy(query, filepath, strategy):
     }
 
 
-def compare_strategies(query, filepath):
-    strategies = ["langgraph", "crewai", "autogen"]
-    evaluations = [evaluate_strategy(query, filepath, s) for s in strategies]
+def compare_strategies(query: str, filepath: str) -> pd.DataFrame:
+    # Simulate timings and rows returned
+    strategies = ["LangGraph", "CrewAI", "AutoGen"]
+    results = []
 
-    best = max(evaluations, key=lambda x: (x["accuracy"], -x["latency"]))
-    summary = {
-        "evaluations": evaluations,
-        "recommended": best["strategy"],
-        "reason": f"{best['strategy'].capitalize()} is most accurate with latency {best['latency']}s"
-    }
-    return summary
+    for strategy in strategies:
+        time_taken = round(random.uniform(1.0, 2.5), 2)
+        row_count = random.randint(5, 12)
+        total = random.randint(1000, 10000)
+
+        results.append({
+            "Strategy": strategy,
+            "TimeTaken (s)": time_taken,
+            "Rows Returned": row_count,
+            "Estimated Total": total
+        })
+
+    return pd.DataFrame(results)

@@ -1,0 +1,89 @@
+2025-04-20 11:21:20,520 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 11:21:24,729 [WARNING]  * Debugger is active!
+2025-04-20 11:21:24,733 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 11:21:24,948 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 11:21:28,467 [INFO] 127.0.0.1 - - [20/Apr/2025 11:21:28] "GET / HTTP/1.1" 200 -
+2025-04-20 11:21:33,015 [INFO] 127.0.0.1 - - [20/Apr/2025 11:21:33] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-20 11:21:55,244 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:55,281 [INFO] Orchestrator triggered for user query: certificate renewal for customer Adams-Anderson
+2025-04-20 11:21:55,281 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:57,051 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:21:57,052 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 11:21:57,053 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 11:21:57,113 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:57,122 [INFO] Orchestrator triggered for user query: certificate renewal for customer Adams-Anderson
+2025-04-20 11:21:57,123 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:57,753 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:21:57,754 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 11:21:57,755 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 11:21:57,755 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:57,756 [INFO] Orchestrator triggered for user query: certificate renewal for customer Adams-Anderson
+2025-04-20 11:21:57,756 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:58,382 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:21:58,383 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 11:21:58,383 [INFO] Pipeline executed successfully for strategy: crewai
+2025-04-20 11:21:58,384 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:58,384 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 11:21:58,384 [INFO] Orchestrator triggered for user query: certificate renewal for customer Adams-Anderson
+2025-04-20 11:21:58,384 [INFO] Orchestrator determined task: certificate_renewal
+2025-04-20 11:21:58,384 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:58,404 [INFO] Discovery agent matched 1 rows.
+2025-04-20 11:21:59,009 [INFO] Task agent (certificate_renewal) executed successfully.
+2025-04-20 11:21:59,009 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:21:59,010 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 11:21:59,010 [INFO] Validation agent completed successfully.
+2025-04-20 11:21:59,011 [INFO] Pipeline executed successfully for strategy: autogen
+2025-04-20 11:21:59,015 [INFO] 127.0.0.1 - - [20/Apr/2025 11:21:59] "POST /cpq/predict HTTP/1.1" 200 -
+2025-04-20 11:21:59,337 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:59,346 [INFO] Orchestrator triggered for user query: test
+2025-04-20 11:21:59,346 [WARNING] Unknown task detected: test
+2025-04-20 11:21:59,347 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:59,375 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:21:59,375 [WARNING] Validation Agent: Missing or empty values detected.
+2025-04-20 11:21:59,376 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 11:21:59,377 [INFO] CPQ pipeline started with strategy: crewai | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:59,377 [INFO] Orchestrator triggered for user query: test
+2025-04-20 11:21:59,377 [WARNING] Unknown task detected: test
+2025-04-20 11:21:59,377 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:59,402 [WARNING] Pipeline returned None or empty state.
+2025-04-20 11:21:59,402 [INFO] CPQ pipeline started with strategy: autogen | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx
+2025-04-20 11:21:59,402 [INFO] Starting AutoGen CPQ pipeline...
+2025-04-20 11:21:59,403 [INFO] Orchestrator triggered for user query: test
+2025-04-20 11:21:59,403 [WARNING] Unknown task detected: test
+2025-04-20 11:21:59,403 [INFO] Orchestrator determined task: unknown
+2025-04-20 11:21:59,403 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:21:59,430 [INFO] Discovery agent matched 0 rows.
+2025-04-20 11:21:59,430 [ERROR] No agent function found for task: unknown
+2025-04-20 11:21:59,430 [WARNING] Pipeline returned None or empty state.
+2025-04-20 11:21:59,449 [INFO] 127.0.0.1 - - [20/Apr/2025 11:21:59] "[35m[1mGET /cpq/performance?task=certificate_renewal&query=certificate%20renewal%20for%20customer%20Adams-Anderson HTTP/1.1[0m" 500 -
+2025-04-20 11:22:14,324 [INFO] 127.0.0.1 - - [20/Apr/2025 11:22:14] "GET /cpq/download?path=G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_2025-04-20.json HTTP/1.1" 200 -
+2025-04-20 11:30:49,466 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\pylsp\\plugins\\signature.py', reloading
+2025-04-20 11:30:49,467 [INFO]  * Detected change in 'C:\\Users\\HP\\anaconda3\\Lib\\site-packages\\jedi\\cache.py', reloading

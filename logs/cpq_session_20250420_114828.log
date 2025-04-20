@@ -1,0 +1,23 @@
+2025-04-20 11:48:35,922 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-20 11:48:40,685 [WARNING]  * Debugger is active!
+2025-04-20 11:48:40,689 [INFO]  * Debugger PIN: 470-937-502
+2025-04-20 11:48:40,899 [INFO]  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+2025-04-20 11:50:01,041 [INFO] 127.0.0.1 - - [20/Apr/2025 11:50:01] "GET / HTTP/1.1" 200 -
+2025-04-20 11:50:02,810 [INFO] 127.0.0.1 - - [20/Apr/2025 11:50:02] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-20 11:50:22,412 [INFO] CPQ pipeline started with strategy: langgraph | File: G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx
+2025-04-20 11:50:22,444 [INFO] Orchestrator triggered for user query: ITAM Reload for customer Stephens PLC
+2025-04-20 11:50:22,445 [INFO] Discovery Agent: You are the Discovery Agent. Analyze the document or input to discover:
+- Key project details such as task type, requested services, hardware/software inventory, and vendor details.
+- Highlight any ambiguous or missing fields.
+- Provide extracted structured fields such as: task_type, quantity, product_name, license_type, associated_action.
+Respond with a JSON-style breakdown of all discovered values.
+2025-04-20 11:50:24,221 [INFO] Validation Agent: Verifying result integrity...
+2025-04-20 11:50:24,223 [INFO] Validation Agent: All values verified successfully.
+2025-04-20 11:50:24,223 [INFO] Pipeline executed successfully for strategy: langgraph
+2025-04-20 11:50:24,267 [INFO] 127.0.0.1 - - [20/Apr/2025 11:50:24] "POST /cpq/predict HTTP/1.1" 200 -
+2025-04-20 11:57:38,799 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 11:57:38,800 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 11:57:38,801 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\tmpne505gq1', reloading
+2025-04-20 11:57:38,802 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\tmpne505gq1', reloading
+2025-04-20 11:57:38,803 [INFO]  * Detected change in 'G:\\MVP\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading
+2025-04-20 11:57:38,804 [INFO]  * Detected change in 'g:\\mvp\\mnt\\data\\CPQ_Agentic_Workflow\\ui\\main.py', reloading

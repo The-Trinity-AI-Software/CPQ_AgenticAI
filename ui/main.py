@@ -8,7 +8,7 @@ Created on Tue Apr 15 18:33:01 2025
 
 import sys
 import os
-
+import time
 # Add project root to Python path
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if PROJECT_ROOT not in sys.path:
@@ -25,6 +25,7 @@ from agentic_evaluation import compare_strategies
 
 app = Flask(__name__, template_folder='../templates')
 logger = setup_logger()
+
 
 
 
@@ -77,7 +78,6 @@ def predict():
         df_result = result["result_df"]
         df_result["Total"] = pd.to_numeric(df_result["Total"], errors="coerce")
 
-        # Move Total column to the end
         if "Total" in df_result.columns:
             cols = [col for col in df_result.columns if col != "Total"] + ["Total"]
             df_result = df_result[cols]
@@ -85,7 +85,6 @@ def predict():
         df_result = df_result[df_result.drop("Total", axis=1).apply(lambda x: x.astype(str).str.strip().any(), axis=1)]
         df_result = df_result.reset_index(drop=True)
 
-        # Sum of Totals = Grand Total
         grand_total = df_result["Total"].sum()
         total_row = {col: "" for col in df_result.columns}
         total_row["Total"] = grand_total
@@ -97,17 +96,39 @@ def predict():
         df_result.to_excel(output_excel_path, index=False, engine="openpyxl")
         df_result.to_json(output_json_path, orient="records")
 
-        comparison_df = compare_strategies(query=query, filepath=sample_path)
-        comparison_json = comparison_df.to_dict(orient="records") if isinstance(comparison_df, pd.DataFrame) and not comparison_df.empty else []
+        # Call performance comparison for all 3 strategies
+        strategies = ["langgraph", "crewai", "autogen"]
+        performance_results = []
+        best_strategy = None
+        min_time = float('inf')
+
+        for strat in strategies:
+            start = time.time()
+            strat_result = run_cpq_pipeline(user_query=query, filepath=sample_path, strategy=strat)
+            duration = round(time.time() - start, 2)
+            rows = len(strat_result["result_df"]) if isinstance(strat_result["result_df"], pd.DataFrame) else 0
+            total_amt = strat_result["result_df"]["Total"].sum() if "Total" in strat_result["result_df"].columns else 0
+            performance_results.append({
+                "Strategy": strat.title(),
+                "Time Taken (s)": duration,
+                "Rows Returned": rows,
+                "Total Value": float(total_amt)
+            })
+            if duration < min_time:
+                min_time = duration
+                best_strategy = strat.title()
+
+        # Dynamic summary based on best strategy
+        comparison_summary = f"Based on the current task, <b>{best_strategy}</b> was the most efficient, completing in <b>{min_time} seconds</b>."
 
         return jsonify({
-            "grand_total": float(grand_total) if pd.notnull(grand_total) else 0.0,
+            "grand_total": float(grand_total),
             "records": df_result.to_dict(orient="records"),
             "download_excel": output_excel_path,
             "download_json": output_json_path,
-            "agent_comparison": comparison_json
+            "agent_comparison": performance_results,
+            "comparison_summary": comparison_summary
         })
-    
 
     except Exception as e:
         logger.exception("❌ Error in /cpq/predict endpoint:")
@@ -123,9 +144,18 @@ def download():
 @app.route("/cpq/performance", methods=["GET"])
 def compare_agents():
     task_type = request.args.get("task", "itam_reload")
+    query = request.args.get("query", "test")
     sample_path = TEMPLATE_MAP.get(task_type)
-    comparison_df = compare_strategies(query="test", filepath=sample_path)
-    return comparison_df.to_json(orient="records")
+
+    if not sample_path or not os.path.exists(sample_path):
+        return jsonify({"error": f"Filepath not found for task: {task_type}"}), 400
+
+    try:
+        comparison_df = compare_strategies(query=query, filepath=sample_path)
+        return comparison_df.to_json(orient="records")
+    except Exception as e:
+        logger.exception("❌ Error in /cpq/performance endpoint:")
+        return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
