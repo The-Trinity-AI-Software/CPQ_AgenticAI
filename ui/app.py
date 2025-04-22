@@ -111,8 +111,8 @@ def predict():
         df_result.loc[len(df_result)] = total_row
 
         today = datetime.now().strftime("%Y-%m-%d")
-        output_excel_path = f"/home/CPQ_Agentic_Workflow/outputs/test_results_{today}.xlsx"
-        output_json_path = f"/home/CPQ_Agentic_Workflow/outputs/test_results_{today}.json"
+        output_excel_path = f"/home/CPQ_AgenticAI/outputs/test_results_{today}.xlsx"
+        output_json_path = f"/home/CPQ_AgenticAI/outputs/test_results_{today}.json"
         df_result.to_excel(output_excel_path, index=False, engine="openpyxl")
         df_result.to_json(output_json_path, orient="records")
 
