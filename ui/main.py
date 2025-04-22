@@ -30,9 +30,9 @@ logger = setup_logger()
 
 
 TEMPLATE_MAP = {
-    "itam_reload": r"G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/ITAMRELOAD.xlsx",
-    "certificate_renewal": r"G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/cert_renewal.xlsx",
-    "add_new_workstation": r"G:/MVP/mnt/data/CPQ_Agentic_Workflow/excel/workstation.xlsx"
+    "itam_reload": r"/home/CPQ_AgenticAI/excel/ITAMRELOAD.xlsx",
+    "certificate_renewal": r"/home/CPQ_AgenticAI/excel/cert_renewal.xlsx",
+    "add_new_workstation": r"/home/CPQ_AgenticAI/excel/workstation.xlsx"
 }
 
 # At top-level
@@ -91,8 +91,8 @@ def predict():
         df_result.loc[len(df_result)] = total_row
 
         today = datetime.now().strftime("%Y-%m-%d")
-        output_excel_path = f"G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_{today}.xlsx"
-        output_json_path = f"G:/MVP/mnt/data/CPQ_Agentic_Workflow/outputs/test_results_{today}.json"
+        output_excel_path = f"/home/CPQ_Agentic_Workflow/outputs/test_results_{today}.xlsx"
+        output_json_path = f"/home/CPQ_Agentic_Workflow/outputs/test_results_{today}.json"
         df_result.to_excel(output_excel_path, index=False, engine="openpyxl")
         df_result.to_json(output_json_path, orient="records")
 
