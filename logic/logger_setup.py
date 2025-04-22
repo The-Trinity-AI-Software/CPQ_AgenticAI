@@ -10,7 +10,7 @@ import os
 from datetime import datetime
 
 def setup_logger():
-    log_dir = r"G:/MVP/mnt/data/CPQ_Agentic_Workflow/logs"
+    log_dir = r"/home/CPQ_AgenticAI/MVP/mnt/data/CPQ_Agentic_Workflow/logs"
     os.makedirs(log_dir, exist_ok=True)
     
     log_filename = f"cpq_session_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
