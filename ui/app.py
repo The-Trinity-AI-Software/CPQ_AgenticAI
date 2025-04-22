@@ -19,7 +19,7 @@ from agentic_evaluation import compare_strategies
 app = Flask(__name__, template_folder='../templates')
 CORS(app)
 
-logger = setup_logger()  # Set up the logger
+logger = setup_logger()
 
 TEMPLATE_MAP = {
     "itam_reload": r"/home/CPQ_AgenticAI/excel/ITAMRELOAD.xlsx",
@@ -31,10 +31,12 @@ TEMPLATE_CACHE = {
     k: pd.read_excel(v) for k, v in TEMPLATE_MAP.items() if os.path.exists(v)
 }
 
+
 @app.route("/")
 def index():
     logger.info("📄 Rendering index.html")
     return render_template("index.html")
+
 
 @app.route("/cpq/template", methods=["GET"])
 def get_template():
@@ -52,6 +54,7 @@ def get_template():
 
     logger.debug(f"📊 Returning template preview for task: {task_type}")
     return df.to_json(orient="records")
+
 
 @app.route("/cpq/predict", methods=["POST"])
 def predict():
@@ -72,11 +75,27 @@ def predict():
             return jsonify({"error": "File path not found."}), 404
 
         result = run_cpq_pipeline(user_query=query, filepath=sample_path, strategy=strategy)
-        if not result or result.get("result_df") is None or isinstance(result["result_df"], dict):
-            logger.error("Invalid data returned from pipeline.")
+        df_result = result.get("result_df")
+
+        if not isinstance(df_result, pd.DataFrame):
+            logger.error("Invalid result_df returned from pipeline.")
             return jsonify({"error": "No valid data returned from pipeline."}), 500
 
-        df_result = result["result_df"]
+        logger.debug(f"🧾 Columns in result_df: {df_result.columns.tolist()}")
+
+        # Handle missing "Total" column
+        if "Total" not in df_result.columns:
+            logger.warning("⚠️ 'Total' column not found. Attempting to calculate it.")
+            price_col = next((col for col in df_result.columns if "price" in col.lower()), None)
+            qty_col = next((col for col in df_result.columns if "qty" in col.lower() or "quantity" in col.lower()), None)
+
+            if price_col and qty_col:
+                df_result["Total"] = pd.to_numeric(df_result[price_col], errors="coerce") * pd.to_numeric(df_result[qty_col], errors="coerce")
+                logger.info(f"🧮 Computed 'Total' using: {price_col} × {qty_col}")
+            else:
+                logger.error("❌ Cannot calculate 'Total'. No matching price or quantity columns.")
+                df_result["Total"] = 0
+
         df_result["Total"] = pd.to_numeric(df_result["Total"], errors="coerce")
 
         if "Total" in df_result.columns:
@@ -97,7 +116,6 @@ def predict():
         df_result.to_excel(output_excel_path, index=False, engine="openpyxl")
         df_result.to_json(output_json_path, orient="records")
 
-        # Strategy comparisons
         strategies = ["langgraph", "crewai", "autogen"]
         performance_results = []
         best_strategy = None
@@ -107,8 +125,9 @@ def predict():
             start = time.time()
             strat_result = run_cpq_pipeline(user_query=query, filepath=sample_path, strategy=strat)
             duration = round(time.time() - start, 2)
-            rows = len(strat_result["result_df"]) if isinstance(strat_result["result_df"], pd.DataFrame) else 0
-            total_amt = strat_result["result_df"]["Total"].sum() if "Total" in strat_result["result_df"].columns else 0
+            strat_df = strat_result.get("result_df", pd.DataFrame())
+            rows = len(strat_df) if isinstance(strat_df, pd.DataFrame) else 0
+            total_amt = strat_df["Total"].sum() if "Total" in strat_df.columns else 0
             performance_results.append({
                 "Strategy": strat.title(),
                 "Time Taken (s)": duration,
@@ -120,8 +139,8 @@ def predict():
                 best_strategy = strat.title()
 
         comparison_summary = f"Based on the current task, <b>{best_strategy}</b> was the most efficient, completing in <b>{min_time} seconds</b>."
+        logger.info(f"✅ Prediction complete | Best Strategy: {best_strategy}")
 
-        logger.info(f"✅ Prediction completed | Best Strategy: {best_strategy}")
         return jsonify({
             "grand_total": float(grand_total),
             "records": df_result.to_dict(orient="records"),
@@ -135,6 +154,7 @@ def predict():
         logger.exception("❌ Error in /cpq/predict endpoint:")
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+
 @app.route("/cpq/download", methods=["GET"])
 def download():
     path = request.args.get("path")
@@ -143,6 +163,7 @@ def download():
         return jsonify({"error": "Download path invalid."}), 404
     logger.info(f"📤 Sending file: {path}")
     return send_file(path, as_attachment=True)
+
 
 @app.route("/cpq/performance", methods=["GET"])
 def compare_agents():
@@ -162,9 +183,10 @@ def compare_agents():
         logger.exception("❌ Error in /cpq/performance endpoint:")
         return jsonify({"error": f"Internal server error: {str(e)}"}), 500
 
+
 if __name__ == "__main__":
     import logging
-    log = logging.getLogger('werkzeug')  # Flask's internal logger
+    log = logging.getLogger('werkzeug')
     log.setLevel(logging.DEBUG)
     app.logger.setLevel(logging.DEBUG)
     app.run(host='0.0.0.0', debug=True, port=8000)
