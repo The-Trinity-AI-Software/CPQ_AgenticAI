@@ -1,0 +1,7 @@
+2025-04-22 15:45:52,607 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-22 15:45:53,918 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.31.20.77:8000
+2025-04-22 15:45:53,918 [INFO] [33mPress CTRL+C to quit[0m
+2025-04-22 15:45:53,923 [INFO]  * Restarting with watchdog (inotify)

@@ -1,0 +1,34 @@
+2025-04-22 15:45:56,444 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-22 15:45:57,752 [WARNING]  * Debugger is active!
+2025-04-22 15:45:57,754 [INFO]  * Debugger PIN: 174-769-850
+2025-04-22 15:46:01,735 [INFO] 136.226.244.184 - - [22/Apr/2025 15:46:01] "GET / HTTP/1.1" 200 -
+2025-04-22 15:46:11,295 [INFO] 136.226.244.184 - - [22/Apr/2025 15:46:11] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 15:46:23,468 [INFO] 136.226.244.184 - - [22/Apr/2025 15:46:23] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 15:46:38,464 [INFO] 136.226.244.184 - - [22/Apr/2025 15:46:38] "OPTIONS /cpq/predict HTTP/1.1" 200 -
+2025-04-22 15:46:38,927 [INFO] 136.226.244.184 - - [22/Apr/2025 15:46:38] "[31m[1mPOST /cpq/predict HTTP/1.1[0m" 400 -
+2025-04-22 16:01:22,013 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:22] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:01:22,497 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:22] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:01:39,368 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:39] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:01:40,712 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:40] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:01:43,057 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:43] "GET /cpq/template?task=add_new_workstation HTTP/1.1" 200 -
+2025-04-22 16:01:44,056 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:44] "GET /cpq/template?task=add_new_workstation HTTP/1.1" 200 -
+2025-04-22 16:01:47,130 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:47] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:01:49,142 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:49] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:01:49,785 [INFO] 136.226.244.184 - - [22/Apr/2025 16:01:49] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:02:37,651 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:37] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:02:38,520 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:38] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:02:39,504 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:39] "OPTIONS /cpq/predict HTTP/1.1" 200 -
+2025-04-22 16:02:39,967 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:39] "[31m[1mPOST /cpq/predict HTTP/1.1[0m" 400 -
+2025-04-22 16:02:41,217 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:41] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:02:42,220 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:42] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:02:44,476 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:44] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:02:45,349 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:45] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:02:47,877 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:47] "GET /cpq/template?task=add_new_workstation HTTP/1.1" 200 -
+2025-04-22 16:02:49,873 [INFO] 136.226.244.184 - - [22/Apr/2025 16:02:49] "GET /cpq/template?task=add_new_workstation HTTP/1.1" 200 -
+2025-04-22 16:07:27,173 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:27] "GET /cpq/template?task=itam_reload HTTP/1.1" 200 -
+2025-04-22 16:07:35,229 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:35] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:07:36,285 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:36] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:07:37,709 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:37] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:07:39,842 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:39] "GET /cpq/template?task=add_new_workstation HTTP/1.1" 200 -
+2025-04-22 16:07:43,773 [INFO] 136.226.244.184 - - [22/Apr/2025 16:07:43] "GET /cpq/template?task=certificate_renewal HTTP/1.1" 200 -
+2025-04-22 16:09:14,941 [INFO] 27.6.160.67 - - [22/Apr/2025 16:09:14] "GET / HTTP/1.1" 200 -

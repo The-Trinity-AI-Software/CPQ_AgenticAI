@@ -1,0 +1,20 @@
+2025-04-21 04:42:41,089 [INFO] HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+2025-04-21 04:42:42,269 [WARNING]  * Debugger is active!
+2025-04-21 04:42:42,271 [INFO]  * Debugger PIN: 239-469-595
+2025-04-21 04:48:48,926 [INFO] 139.5.248.46 - - [21/Apr/2025 04:48:48] "GET / HTTP/1.1" 200 -
+2025-04-21 04:48:49,301 [INFO] 139.5.248.46 - - [21/Apr/2025 04:48:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-21 04:49:07,963 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:07] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:10,247 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:10] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:11,051 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:11] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:11,887 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:11] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:20,540 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:20] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:25,796 [INFO] 139.5.248.46 - - [21/Apr/2025 04:49:25] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:49:27,713 [INFO] 27.6.160.67 - - [21/Apr/2025 04:49:27] "GET / HTTP/1.1" 200 -
+2025-04-21 04:49:31,332 [INFO] 27.6.160.67 - - [21/Apr/2025 04:49:31] "[33mGET /cpq/template?task=certificate_renewal HTTP/1.1[0m" 404 -
+2025-04-21 04:49:35,538 [INFO] 27.6.160.67 - - [21/Apr/2025 04:49:35] "[33mGET /cpq/template?task=certificate_renewal HTTP/1.1[0m" 404 -
+2025-04-21 04:49:38,969 [INFO] 27.6.160.67 - - [21/Apr/2025 04:49:38] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:54:00,237 [INFO] 139.5.248.46 - - [21/Apr/2025 04:54:00] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:54:03,254 [INFO] 139.5.248.46 - - [21/Apr/2025 04:54:03] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 04:54:03,955 [INFO] 139.5.248.46 - - [21/Apr/2025 04:54:03] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 05:52:53,792 [INFO] 27.6.160.67 - - [21/Apr/2025 05:52:53] "[33mGET /cpq/template?task=itam_reload HTTP/1.1[0m" 404 -
+2025-04-21 08:36:12,359 [INFO]  * Detected change in '/home/copilot_document_search/app.py', reloading

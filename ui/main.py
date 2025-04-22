@@ -22,8 +22,12 @@ from datetime import datetime
 from logic.application_logic import run_cpq_pipeline
 from logic.logger_setup import setup_logger
 from agentic_evaluation import compare_strategies
+from flask_cors import CORS
 
 app = Flask(__name__, template_folder='../templates')
+# Allow all origins
+CORS(app)
+
 logger = setup_logger()
 
 
