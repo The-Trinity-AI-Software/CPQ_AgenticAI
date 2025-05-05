@@ -13,28 +13,11 @@
     .btn:hover { background-color: #0056b3; }
     .success { color: green; margin-top: 10px; }
     tr:last-child { background-color: #e6ffe6; font-weight: bold; }
-    #loadingOverlay {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-color: rgba(0,0,0,0.4); text-align: center;
-    }
-    #loadingSpinner {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px; background: white;
-      border-radius: 8px; font-size: 18px; color: #333;
-    }
-    .results-section { display: flex; justify-content: space-between; gap: 20px; }
-    .left-pane, .right-pane { width: 48%; }
-    .summary-box {
-      margin-top: 15px;
-      padding: 10px;
-      background: #f0f8ff;
-      border-left: 4px solid #007bff;
-      font-weight: bold;
+    #handshakeStatus {
+      background:#f8f9fa;
+      padding:10px;
+      margin:20px 0;
+      border-left:4px solid #007bff;
     }
   </style>
 </head>
@@ -60,148 +43,96 @@
   <div id="templatePreview"></div>
 
   <label>Enter CPQ Request:</label>
-  <textarea id="query" rows="4" placeholder="e.g., cert renewal for customer CUST083"></textarea>
+  <textarea id="query" rows="4"></textarea>
   <button class="btn" onclick="submitQuery()">🚀 Submit Query</button>
 
+  <div id="handshakeStatus">
+    <b>🛠️ Agent Handshakes:</b>
+    <div id="handshakeMessages"></div>
+  </div>
+
   <div class="success" id="summary"></div>
+  <div id="outputTable"></div>
 
-  <div class="results-section">
-    <div class="left-pane">
-      <div id="outputTable"></div>
-      <p>
-        <a class="btn" id="downloadExcelBtn" href="#" style="display:none" target="_blank">⬇️ Download Excel</a>
-        <a class="btn" id="downloadJsonBtn" href="#" style="display:none" target="_blank">📁 Download JSON</a>
-      </p>
-    </div>
-    <div class="right-pane">
-      <button class="btn" onclick="loadAgentComparison()">⚖️ Compare Agentic AI</button>
-      <div id="agentComparisonTable"></div>
-      <div id="comparisonSummary" class="summary-box"></div>
-    </div>
-  </div>
-
-  <div style="text-align: right; margin-top: 20px;">
-    <button class="btn" onclick="resetPage()">🔄 Reset</button>
-  </div>
-</div>
-
-<div id="loadingOverlay">
-  <div id="loadingSpinner">⏳ Submitting your query... Please wait</div>
 </div>
 
 <script>
-  async function loadTemplate() {
-    const task = document.getElementById("task").value;
-    const previewDiv = document.getElementById("templatePreview");
-    previewDiv.innerHTML = "Loading...";
+function updateHandshake(message) {
+  const msgDiv = document.getElementById("handshakeMessages");
+  const p = document.createElement("p");
+  p.innerHTML = message;
+  msgDiv.appendChild(p);
+}
 
-    try {
-      const res = await fetch(`/cpq/template?task=${task}`);
-      const data = await res.json();
-      if (!Array.isArray(data)) {
-        previewDiv.innerHTML = "<b>Error loading template</b>";
-        return;
-      }
-      let html = "<h4>📄 Template Preview</h4><table><thead><tr>";
-      Object.keys(data[0]).forEach(col => html += `<th>${col}</th>`);
+function loadTemplate() {
+  const task = document.getElementById("task").value;
+
+  // ✅ Add Pre-Template Load Handshakes
+  updateHandshake("[Orchestrator Agent] Initiated...");
+  updateHandshake(`[Task Agent] Loading ${task} Template...`);
+
+  updateHandshake("[Discovery Agent] initiated...");
+
+  fetch(`/cpq/template?task=${task}`).then(res => res.json()).then(data => {
+    updateHandshake("[Discovery Agent] loaded template.");
+
+    let html = "<h4>Template Preview</h4><table><thead><tr>";
+    Object.keys(data[0] || {}).forEach(col => html += `<th>${col}</th>`);
+    html += "</tr></thead><tbody>";
+    data.forEach(row => {
+      html += "<tr>";
+      Object.values(row).forEach(val => html += `<td>${val}</td>`);
+      html += "</tr>";
+    });
+    html += "</tbody></table>";
+    document.getElementById("templatePreview").innerHTML = html;
+  });
+}
+
+function submitQuery() {
+  const strategy = document.getElementById("strategy").value;
+  const task = document.getElementById("task").value;
+  const query = document.getElementById("query").value;
+  const summary = document.getElementById("summary");
+  const outputDiv = document.getElementById("outputTable");
+
+  document.getElementById("handshakeMessages").innerHTML = "";
+  summary.innerHTML = "";
+  outputDiv.innerHTML = "";
+
+  const es = new EventSource(`/cpq/stream?query=${query}&task=${task}&strategy=${strategy}`);
+
+  es.onmessage = function(event) {
+    const msg = event.data;
+
+    if (msg.startsWith("FINAL_RESULT::")) {
+      const result = JSON.parse(msg.replace("FINAL_RESULT::", ""));
+
+      summary.innerHTML = `✅ Grand Total: $${result.grand_total}`;
+      let html = "<h4>CPQ Output</h4><table><thead><tr>";
+      Object.keys(result.records[0]).forEach(col => html += `<th>${col}</th>`);
       html += "</tr></thead><tbody>";
-      data.forEach(row => {
+      result.records.forEach(row => {
         html += "<tr>";
-        Object.values(row).forEach(val => html += `<td>${val || ""}</td>`);
-        html += "</tr>";
-      });
-      html += "</tbody></table>";
-      previewDiv.innerHTML = html;
-    } catch (err) {
-      previewDiv.innerHTML = "<b>Failed to load template</b>";
-      console.error(err);
-    }
-  }
-
-  async function submitQuery() {
-    const strategy = document.getElementById("strategy").value;
-    const task = document.getElementById("task").value;
-    const query = document.getElementById("query").value;
-
-    const overlay = document.getElementById("loadingOverlay");
-    const summary = document.getElementById("summary");
-    const outputDiv = document.getElementById("outputTable");
-    const comparisonDiv = document.getElementById("agentComparisonTable");
-    const compSummary = document.getElementById("comparisonSummary");
-
-    overlay.style.display = "block";
-    summary.innerHTML = "";
-    outputDiv.innerHTML = "";
-    comparisonDiv.innerHTML = "";
-    compSummary.innerHTML = "";
-
-    try {
-      const res = await fetch("/cpq/predict", {
-        method: "POST",
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ strategy, task, query })
-      });
-
-      const data = await res.json();
-      if (data.error) {
-        summary.innerHTML = "🚫 " + data.error;
-        return;
-      }
-
-      summary.innerHTML = `✅ Grand Total: $${data.grand_total?.toFixed(2) || 'N/A'}`;
-
-      let html = "<h4>📊 CPQ Output</h4><table><thead><tr>";
-      Object.keys(data.records[0]).forEach(col => html += `<th>${col}</th>`);
-      html += "</tr></thead><tbody>";
-      data.records.forEach(row => {
-        html += "<tr>";
-        Object.values(row).forEach(val => html += `<td>${val || ""}</td>`);
+        Object.values(row).forEach(val => html += `<td>${val}</td>`);
         html += "</tr>";
       });
       html += "</tbody></table>";
       outputDiv.innerHTML = html;
 
-      document.getElementById("downloadExcelBtn").href = `/cpq/download?path=${data.download_excel}`;
-      document.getElementById("downloadJsonBtn").href = `/cpq/download?path=${data.download_json}`;
-      document.getElementById("downloadExcelBtn").style.display = "inline-block";
-      document.getElementById("downloadJsonBtn").style.display = "inline-block";
-
-      if (data.agent_comparison?.length) {
-        let compHtml = "<h4>⚖️ Agentic Strategy Comparison</h4><table><thead><tr>";
-        Object.keys(data.agent_comparison[0]).forEach(col => compHtml += `<th>${col}</th>`);
-        compHtml += "</tr></thead><tbody>";
-        data.agent_comparison.forEach(row => {
-          compHtml += "<tr>";
-          Object.values(row).forEach(val => compHtml += `<td>${val}</td>`);
-          compHtml += "</tr>";
-        });
-        compHtml += "</tbody></table>";
-        comparisonDiv.innerHTML = compHtml;
-
-        if (data.comparison_summary) {
-          compSummary.innerHTML = data.comparison_summary;
-        }
+      if (result.download_excel) {
+        summary.innerHTML += `<br><a href="/cpq/download?path=${result.download_excel}" target="_blank">Download Excel</a>`;
+      }
+      if (result.download_json) {
+        summary.innerHTML += ` | <a href="/cpq/download?path=${result.download_json}" target="_blank">Download JSON</a>`;
       }
 
-    } catch (err) {
-      summary.innerHTML = "❌ Submission failed. See console.";
-      console.error("❌ Submission Error:", err);
-    } finally {
-      overlay.style.display = "none";
+      es.close();
+    } else {
+      updateHandshake(msg);
     }
   }
-
-  function resetPage() {
-    document.getElementById("query").value = "";
-    document.getElementById("summary").innerHTML = "";
-    document.getElementById("outputTable").innerHTML = "";
-    document.getElementById("agentComparisonTable").innerHTML = "";
-    document.getElementById("comparisonSummary").innerHTML = "";
-    document.getElementById("templatePreview").innerHTML = "";
-    document.getElementById("downloadExcelBtn").style.display = "none";
-    document.getElementById("downloadJsonBtn").style.display = "none";
-    window.scrollTo(0, 0);
-  }
+}
 </script>
 </body>
 </html>
