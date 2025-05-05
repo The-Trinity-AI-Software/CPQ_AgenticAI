@@ -1,6 +1,3 @@
-# langgraph_CPQ.py placeholder
-
-# --- Agent State Schema ---
 
 import sys
 import os
