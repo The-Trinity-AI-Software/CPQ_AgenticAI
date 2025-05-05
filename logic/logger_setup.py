@@ -2,8 +2,6 @@
 """
 Created on Tue Apr 15 17:31:56 2025
 
-@author: HP
-"""
 
 import logging
 import os
