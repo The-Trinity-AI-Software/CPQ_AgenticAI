@@ -1,6 +1,3 @@
-# autogen_CPQ.py placeholder
-
-
 import sys
 import os
 import pandas as pd
